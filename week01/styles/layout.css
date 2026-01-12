@@ -1,0 +1,89 @@
+
+
+:root{
+    --border-radius: 4px;
+    --heading-font: 'Times New Roman', Times, serif;
+    --font: lighter;
+    --font-color: white;
+}
+
+.container{
+    width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr / 1fr;
+    grid-template-rows: auto auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "nav    nav"
+        "main   aside"
+        "footer footer";
+    gap: 0.5rem;
+    
+}
+
+header{
+    background-color: rgb(29, 66, 177);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    color: var(--font-color);
+    grid-area: header;
+    
+}
+
+h2{
+    font-family: var(--heading-font);
+    font-weight: var(--font);
+    font-size: 1.3rem;
+    
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav a{
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: var(--font);
+    color: var(--font-color);
+    padding: 1rem;
+
+}
+
+.navigation-menu{
+
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: royalblue;
+    border-radius: var(--border-radius);
+    
+}
+
+main{
+    background-color: lightblue;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    grid-area: main;
+    width: 720px;
+}
+
+aside{
+    background-color: rgb(210, 231, 238);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    grid-area: aside;
+    width: 555px;
+}
+
+footer{
+    background-color:rgb(29, 66, 177);
+    color: var(--font-color);
+    border-radius: var(--border-radius);
+    padding: 6rem;
+    grid-area: footer;
+    text-align: center;
+}

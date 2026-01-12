@@ -1,0 +1,158 @@
+
+*{
+    padding: 0.1rem;
+    margin: 0.45rem;
+
+}
+
+:root{
+    --font: Georgia, 'Times New Roman', Times, serif;
+    --radius-border: 5px;
+    --background: pink;
+    --color1: #fff5f7;
+
+}
+
+header{
+    display:block;
+    
+}
+
+#course-title{
+    color: var(--color1);
+    background-color: rgb(204, 74, 96);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: var(--radius-border);
+    display: flex;
+    justify-content: center;    
+    
+}
+
+.navigation{
+    background-color: var(--background);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: var(--radius-border);
+    height: 60px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 1.05rem;
+    background-color: rgb(240, 174, 186);
+    width: 100px;
+    height: 40px;
+    border-radius: var(--radius-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navigation a:hover {
+    color: var(--color1);
+    background-color:rgb(233, 83, 108);
+    border-radius: var(--radius-border);
+    width: 100px;
+    height: 40px;
+}
+
+h1, h2{
+font-family: var(--font);
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+    grid-area: title !important;
+}
+
+h2{
+    background-color: var(--background);
+    color: black;
+    border-radius: var(--radius-border);
+    font-size: 1.2rem;
+    text-align: center;
+}
+main {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-areas:
+    "title title" 
+    "left right" !important;
+    gap: 1.2rem;
+
+}
+
+.card{
+    background-color: var(--color1);
+    border-radius: var(--radius-border);
+    border: 0.5px solid black;
+}
+
+.card-left{
+    grid-area: left !important;
+}
+
+.card-left .card-content-left{
+    display:flex;
+    align-items:center;
+    gap: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.card-left img, .card-right img{
+    flex-shrink:0;
+}
+
+.card-right{
+    grid-area: right !important;
+}
+
+.card-right .card-content-right, .card-content-right1{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.card-left p, .card-content-right1 p{
+    text-align: left;
+}
+
+.card-content-right p{
+    text-align: right;
+}
+
+
+figcaption{
+    font-style: italic;
+    color: grey;
+}
+
+footer{
+    font-family: var(--font);
+    font-weight: light;
+    font-style: italic;
+    background-color: rgb(233, 83, 108);
+    color: var(--color1);
+    border-radius: var(--radius-border);
+    font-size: 1.05rem;
+    margin-top: 1rem;
+}
+
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+
+}

@@ -1,7 +1,7 @@
 
 *{
-    padding: 0.1rem;
-    margin: 0.45rem;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -10,6 +10,9 @@
     --radius-border: 5px;
     --background: pink;
     --color1: #fff5f7;
+    --padding-bottom: 0.5rem;
+    --padding-top: 0.5rem;
+
 
 }
 
@@ -23,7 +26,6 @@ header{
     background-color: rgb(204, 74, 96);
     font-size: 2rem;
     font-weight: bold;
-    border-radius: var(--radius-border);
     display: flex;
     justify-content: center;    
     
@@ -35,7 +37,6 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: var(--radius-border);
     height: 60px;
 }
 
@@ -72,6 +73,7 @@ h1{
     text-align: center;
     font-size: 1.5rem;
     grid-area: title !important;
+    padding-top: 1rem;
 }
 
 h2{
@@ -87,7 +89,8 @@ main {
     grid-template-areas:
     "title title" 
     "left right" !important;
-    gap: 1.2rem;
+    row-gap: 2rem;
+    
 
 }
 
@@ -95,6 +98,9 @@ main {
     background-color: var(--color1);
     border-radius: var(--radius-border);
     border: 0.5px solid black;
+    padding: 0.8rem;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 .card-left{
@@ -105,22 +111,35 @@ main {
     display:flex;
     align-items:center;
     gap: 2rem;
-    padding-bottom: 0.5rem;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    
 }
 
 .card-left img, .card-right img{
     flex-shrink:0;
+    padding-top: 1rem;
 }
 
 .card-right{
     grid-area: right !important;
 }
 
-.card-right .card-content-right, .card-content-right1{
+.card-right .card-content-right{
     display:flex;
     align-items: center;
     gap: 2rem;
-    padding-bottom: 0.5rem;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    
+}
+
+.card-right .card-content-right1{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
 }
 
 .card-left p, .card-content-right1 p{
@@ -143,7 +162,6 @@ footer{
     font-style: italic;
     background-color: rgb(233, 83, 108);
     color: var(--color1);
-    border-radius: var(--radius-border);
     font-size: 1.05rem;
     margin-top: 1rem;
 }

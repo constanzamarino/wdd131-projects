@@ -8,8 +8,8 @@
 :root{
     --font: 'Merriweather' sans-serif;
     --radius-border: 5px;
-    --background: pink;
-    --color1: #fff5f7;
+    --background: rgb(255, 192, 203);
+    --color1: rgb(255, 245, 247);
     --padding-bottom: 0.5rem;
     --padding-top: 0.5rem;
 
@@ -43,7 +43,7 @@ header{
 
 .navigation a {
     text-decoration: none;
-    color: black;
+    color: rgb(0,0,0);
     font-family: var(--font);
     font-weight: bold;
     font-size: 1.05rem;
@@ -78,7 +78,7 @@ h1{
 
 h2{
     background-color: var(--background);
-    color: black;
+    color: rgb(0,0,0);
     border-radius: var(--radius-border);
     font-size: 1.2rem;
     text-align: center;
@@ -98,7 +98,7 @@ main {
 .card{
     background-color: var(--color1);
     border-radius: var(--radius-border);
-    border: 0.5px solid black;
+    border: 0.5px solid rgb(0,0,0);
     padding: 0.8rem;
     max-width: 550px;
     margin: 0 auto;
@@ -162,7 +162,7 @@ footer{
     font-weight: light;
     font-style: italic;
     background-color: rgb(201, 72, 93);
-    color: white;
+    color: rgb(255,255,255);
     font-size: 1.05rem;
     margin-top: 1rem;
 }

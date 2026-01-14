@@ -163,7 +163,7 @@ figcaption{
 
 footer{
     font-family: var(--font);
-    font-weight: light;
+    font-weight: 300;
     font-style: italic;
     background-color: rgb(201, 72, 93);
     color: rgb(255,255,255);
